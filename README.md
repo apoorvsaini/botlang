@@ -1,4 +1,4 @@
-# botlang
+# BotLang
   
 ##What is BotLang?  
 A language that makes it easy to define AI behaviours for bots/programs. The language is written in PHP and needs to be wrapped as an Object of BotLang.  
