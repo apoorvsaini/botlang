@@ -15,9 +15,11 @@
 ?5[What are you called?]
 :5>4
 
+# # is used for single-line commenting
 # : is selector for response, . selectors make it cascaded and random response is selected
 # ? is selector for pattern
 # $ is used for setting response and template variables
 # * is used to mark the spot of mutation, BotLang will store a mirrored code and check if any mutation is needed
 # > is used to direct the response to previous or some other pattern
+
 [/..]
