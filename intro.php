@@ -1,4 +1,5 @@
 <?
+include_once('botlang.php');
 $bot=new botlang(); //creating a botlang object
 $botcode=
 "
