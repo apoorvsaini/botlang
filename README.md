@@ -5,25 +5,7 @@ A language that makes it easy to define AI behaviours for bots/programs. The lan
 Currently only PHP library of BotLang is in development.  
 >BotLang is inspired by AIML and extends its functionalities
 
-##Here is how to run a BotLang code using interpreter written in PHP
-```PHP
-<?
-$bot=new botlang(); //creating a botlang object
-
-//You can run a BotLang script directly
-$bot->load("script://test.botlang"); // script prefix is important for it to know that you are loading script
-
-//EXECUTION
-
-//Now that your bot is prepared with default behaviour you can run it on different templates 
-
-$response=$bot->execute("Hi what is your name?");
-
-?>
-
-```
-
-##BotLang code
+##Intro to BotLang code
 ```BootLang
 [..]
 ?1[How are you doing] #pattern with variable 1
@@ -48,4 +30,22 @@ $response=$bot->execute("Hi what is your name?");
 # * is used to mark the spot of mutation, BotLang will store a mirrored code and check if any mutation is needed
 # > is used to direct the response to previous or some other pattern
 [/..]
+```
+
+##Here is how to run a BotLang code using interpreter written in PHP
+```PHP
+<?
+$bot=new botlang(); //creating a botlang object
+
+//You can run a BotLang script directly
+$bot->load("script://test.botlang"); // script prefix is important for it to know that you are loading script
+
+//EXECUTION
+
+//Now that your bot is prepared with default behaviour you can run it on different templates 
+
+$response=$bot->execute("Hi what is your name?");
+
+?>
+
 ```
