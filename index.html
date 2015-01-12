@@ -39,6 +39,52 @@ Currently only PHP library of BotLang is in development.  </p>
 <blockquote>
 <p>BotLang is inspired by AIML and extends its functionalities</p>
 </blockquote>
+
+<h2>
+<a id="intro-to-botlang-code" class="anchor" href="#intro-to-botlang-code" aria-hidden="true"><span class="octicon octicon-link"></span></a>Intro to BotLang code</h2>
+
+<pre lang="BootLang"><code>[..]
+?1[How are you doing] #pattern with variable 1
+:1[I am fine] #response of variable 1
+:1.1[I don't know] #alternate response for 1, chosen on random
+
+?2[why don't you know?]     
+:2[I am down with fever]
+
+?3[My name is $name]
+:3[Well, hello there, $name]
+
+?4[What is your name?]
+:4[My name is WizBot]
+
+?5[What are you called?]
+:5&gt;4
+
+# : is selector for response, . selectors make it cascaded and random response is selected
+# ? is selector for pattern
+# $ is used for setting response and template variables
+# * is used to mark the spot of mutation, BotLang will store a mirrored code and check if any mutation is needed
+# &gt; is used to direct the response to previous or some other pattern
+[/..]
+</code></pre>
+
+<h2>
+<a id="here-is-how-to-run-a-botlang-code-using-interpreter-written-in-php" class="anchor" href="#here-is-how-to-run-a-botlang-code-using-interpreter-written-in-php" aria-hidden="true"><span class="octicon octicon-link"></span></a>Here is how to run a BotLang code using interpreter written in PHP</h2>
+
+<div class="highlight highlight-PHP"><pre><span class="pl-s2"><span class="pl-k">&lt;</span>?</span>
+<span class="pl-s2"><span class="pl-vo">$bot</span><span class="pl-k">=</span><span class="pl-k">new</span> <span class="pl-s3">botlang</span>(); <span class="pl-c">//creating a botlang object</span></span>
+<span class="pl-s2"></span>
+<span class="pl-s2"><span class="pl-c">//You can run a BotLang script directly</span></span>
+<span class="pl-s2"><span class="pl-vo">$bot</span><span class="pl-k">-&gt;</span>load(<span class="pl-s1"><span class="pl-pds">"</span>script://test.botlang<span class="pl-pds">"</span></span>); <span class="pl-c">// script prefix is important for it to know that you are loading script</span></span>
+<span class="pl-s2"></span>
+<span class="pl-s2"><span class="pl-c">//EXECUTION</span></span>
+<span class="pl-s2"></span>
+<span class="pl-s2"><span class="pl-c">//Now that your bot is prepared with default behaviour you can run it on different templates </span></span>
+<span class="pl-s2"></span>
+<span class="pl-s2"><span class="pl-vo">$response</span><span class="pl-k">=</span><span class="pl-vo">$bot</span><span class="pl-k">-&gt;</span>execute(<span class="pl-s1"><span class="pl-pds">"</span>Hi what is your name?<span class="pl-pds">"</span></span>);</span>
+<span class="pl-s2"></span>
+<span class="pl-s2"></span><span class="pl-pse"><span class="pl-s2">?</span>&gt;</span>
+</pre></div>
       </section>
     </div>
     <footer>
