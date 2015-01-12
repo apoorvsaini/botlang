@@ -27,7 +27,7 @@ $botcode=
 //Now we will load the object so that it can be executed
 $bot->load($botcode);
 //or you can run a BotLang script directly
-$bot->load("script://test.botlang"); // script prefix is important for it to know that you are loading script
+$bot->load("script://intro.botlang"); // script prefix is important for it to know that you are loading script
 
 //EXECUTION
 
