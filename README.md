@@ -9,7 +9,7 @@ Currently only PHP library of BotLang is in development.
 
 ```PHP
 <?
-include_once('botlang.interpret.php');
+include_once('botlang.php');
 $bot=new botlang(); //creating a botlang object
 
 //You can run a BotLang script directly
