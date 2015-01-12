@@ -23,7 +23,8 @@ $botcode=
 # $ is used for setting response and template variables
 # * is used to mark the spot of mutation, BotLang will store a mirrored code and check if any mutation is needed
 # > is used to direct the response to previous or some other pattern
-"; //a botlang code, you can also run the code directly from file
+"; 
+//a botlang code, you can also run the code directly from file
 //Now we will load the object so that it can be executed
 $bot->load($botcode);
 //or you can run a BotLang script directly
