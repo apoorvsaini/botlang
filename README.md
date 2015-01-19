@@ -1,5 +1,5 @@
 # BotLang
-  
+  [![Stack Share](http://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](http://stackshare.io/wizters/wizters)
 ##What is BotLang?  
 A language that makes it easy to define AI behaviours for bots/programs. The interpreter is written in PHP and needs to be wrapped as an Object of BotLang.  
 Currently only PHP library of BotLang is in development.  
