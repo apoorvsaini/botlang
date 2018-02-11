@@ -1,6 +1,6 @@
 # BotLang
 ## Botlang is getting re-named and will be hosted on another repository. The new interpreter will be written in Python.
-##What is BotLang?  
+## What is BotLang?  
 A language that makes it easy to define AI behaviours for bots/programs. The interpreter is written in PHP and needs to be wrapped as an Object of BotLang.  
 Currently only PHP library of BotLang is in development.  
 >BotLang is inspired by AIML and is currently in development mode
