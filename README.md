@@ -5,7 +5,7 @@ A language that makes it easy to define AI behaviours for bots/programs. The int
 Currently only PHP library of BotLang is in development.  
 >BotLang is inspired by AIML and is currently in development mode
 
-##Here is how to run a BotLang code using interpreter written in PHP
+## Here is how to run a BotLang code using interpreter written in PHP
 
 ```PHP
 <?
@@ -24,7 +24,7 @@ $response=$bot->execute("Hi what is your name?");
 ?>
 ```
 
-##Intro to BotLang code
+## Intro to BotLang code
 ```
 [..]
 ?1[How are you doing] #pattern with variable 1
